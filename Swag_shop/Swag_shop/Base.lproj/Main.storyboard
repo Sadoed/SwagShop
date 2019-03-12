@@ -21,22 +21,22 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8C-Yp-VXQ">
                                 <rect key="frame" x="20" y="30" width="165" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="0.39276815879999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uwu-DV-IMP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uwu-DV-IMP">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="139" id="Wnq-2s-yNz" customClass="CategoryCell" customModule="Swag_shop" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="139" id="Wnq-2s-yNz" customClass="CategoryCell" customModule="Swag_shop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wnq-2s-yNz" id="XmH-B0-H7m">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="iMJ-7f-vyX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="133"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qan-fC-KnE">
                                                     <rect key="frame" x="112" y="56.5" width="151" height="26"/>
@@ -51,10 +51,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="iMJ-7f-vyX" firstAttribute="leading" secondItem="XmH-B0-H7m" secondAttribute="leading" id="6Gw-lC-awh"/>
-                                                <constraint firstAttribute="bottom" secondItem="iMJ-7f-vyX" secondAttribute="bottom" id="8Qa-6A-ZVh"/>
                                                 <constraint firstItem="Qan-fC-KnE" firstAttribute="centerY" secondItem="XmH-B0-H7m" secondAttribute="centerY" id="GKc-k0-HyS"/>
+                                                <constraint firstItem="iMJ-7f-vyX" firstAttribute="top" secondItem="XmH-B0-H7m" secondAttribute="top" constant="3" id="Iq9-rJ-2VV"/>
                                                 <constraint firstItem="Qan-fC-KnE" firstAttribute="centerX" secondItem="XmH-B0-H7m" secondAttribute="centerX" id="NGz-mT-Let"/>
-                                                <constraint firstItem="iMJ-7f-vyX" firstAttribute="top" secondItem="XmH-B0-H7m" secondAttribute="top" id="bqb-ek-j6g"/>
+                                                <constraint firstAttribute="bottom" secondItem="iMJ-7f-vyX" secondAttribute="bottom" constant="3" id="ZbB-pt-my5"/>
                                                 <constraint firstAttribute="trailing" secondItem="iMJ-7f-vyX" secondAttribute="trailing" id="xfG-V9-f64"/>
                                             </constraints>
                                         </tableViewCellContentView>
